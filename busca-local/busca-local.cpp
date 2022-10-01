@@ -112,18 +112,18 @@ int main(int argc, char const *argv[])
     }
     cout << "\n";
 
-    // DEBUG
-    double round_dist = 0;
-    for(long unsigned int i=1; i<best_city_index.size(); i++){
-        double dist {distance(cidades[best_city_index[i-1]], cidades[best_city_index[i]])};
-        cout << round_dist << " + " << dist << " = ";
-        round_dist += dist;
-        cout << round_dist << endl;
-    }		
-    double regress {distance(cidades[best_city_index[0]], cidades[best_city_index[best_city_index.size()-1]])};
-    cout << round_dist << " + " << regress << " = ";
-    round_dist += regress;
-    cout << round_dist << endl;
+    // // DEBUG
+    // double round_dist = 0;
+    // for(long unsigned int i=1; i<best_city_index.size(); i++){
+    //     double dist {distance(cidades[best_city_index[i-1]], cidades[best_city_index[i]])};
+    //     cout << round_dist << " + " << dist << " = ";
+    //     round_dist += dist;
+    //     cout << round_dist << endl;
+    // }		
+    // double regress {distance(cidades[best_city_index[0]], cidades[best_city_index[best_city_index.size()-1]])};
+    // cout << round_dist << " + " << regress << " = ";
+    // round_dist += regress;
+    // cout << round_dist << endl;
 
 
     return 0;
